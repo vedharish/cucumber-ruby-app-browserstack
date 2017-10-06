@@ -1,0 +1,14 @@
+server: "hub.browserstack.com"
+user: "BROWSERSTACK_USERNAME"
+key: "BROWSERSTACK_ACCESS_KEY"
+
+common_caps:
+  "build": "cucumber-browserstack"
+  "browserstack.debug": true
+
+browser_caps:
+  -
+    "device": "iPhone 7 Plus"
+    "realMobile": true
+    "app": "bs://e0f9ff6f952d319ee7e520af95ad0d7172d24881"
+    "name": "single_test"

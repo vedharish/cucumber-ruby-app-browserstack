@@ -1,0 +1,14 @@
+server: "hub.browserstack.com"
+user: "BROWSERSTACK_USERNAME"
+key: "BROWSERSTACK_ACCESS_KEY"
+
+common_caps:
+  "build": "cucumber-browserstack"
+  "browserstack.debug": true
+
+browser_caps:
+  -
+    "device": "Google Pixel"
+    "realMobile": true
+    "app": "bs://66b90bb7d6ef8435e34528238cbabb7717d1f612"
+    "name": "single_test"
